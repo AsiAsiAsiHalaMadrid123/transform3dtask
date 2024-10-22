@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 136, 90);
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+img{
+    width: 20vw;
+    height: 38vh;
+}
+.flip-card {
+  background-color: transparent;
+  width: 20vw;
+  height: 38vh;
+  perspective: 1000px;
+  margin: 2%;
+}
+h1{
+    text-align: center;
+    color: rgb(138, 125, 125);
+    margin: 1%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+h2{
+    color: rgb(123, 93, 66);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+button{
+    border: none;
+    border-radius: 6px;
+    padding: 7px;
+    color: white;
+    background-color: rgb(250, 105, 73);
+    transition: 0.2s;
+    margin-left: 2%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 136, 90);
+    box-shadow: 0px 2px 49px 8px rgba(0, 0, 0, 0.3);
+}
+#bb1{
+    margin-left: 42%;
+}
+</style>
+</head>
+<body>
+    <audio autoplay src="./march-marvel-heroes-231645.mp3"></audio>
+    <h1>Marvel Qəhrəmanlarının Flipped Kartları</h1>
+<div class="con">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./Iron_Man_Infobox.jpg" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h2>Iron Man</h2> 
+            <p>Tony Stark</p> 
+            <p>Genius, Billionaire</p>
+          </div>
+        </div>
+          </div>
+          <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./Chris-Evans-title-character-Joe-Johnston-Captain.png" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h2>Captain America</h2> 
+            <p>Steve Rogers</p> 
+            <p>Super Solider</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./Chris_Hemsworth_as_Thor.jpg" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <h2>Thor</h2> 
+            <p>God of Thunder</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./0b6162a9b22ed2e24c4f7dd6bc0a4219.jpg" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h2>Hulk</h2> 
+            <p>Bruce Banner</p>
+            <p>Scientist</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./images (2).jpeg" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <h2>Black Widow</h2> 
+            <p>Natasha Romanoff</p>
+            <p>Spy & Fighter</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./images (1).jpeg" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <h2>Hawkeye</h2> 
+            <p>Cint Barton</p>
+            <p>Master Archer</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./11PANTHER-ANTICIPATION-superJumbo.jpg" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <h2>Black Panther</h2> 
+            <p>T'Challa</p>
+            <p>Wakanda King</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./images.jpeg" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h2>Spider-man</h2> 
+            <p>Peter Parker</p>
+            <p>Freindly Neighborhood Hero</p>
+          </div>
+        </div>
+      </div>
+</div>
+
+<a href="https://en.wikipedia.org/wiki/Marvel_Universe">
+    <button id="bb1">Daha çox öyrən</button>
+</a>
+<a href="https://www.marvel.com/">
+    <button>Marvel Vebsaytı</button>
+</a>
+</body>
+</html>
